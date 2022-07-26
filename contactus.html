@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us</title>
-    <link rel="stylesheet" href="css/style.css?_v=20220725182919">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="img/footer-logo.svg">
 </head>
 <body>
@@ -22,7 +22,7 @@
                     <div class="inner-nav-navigation">
                         <ul>
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="/index.html">Home</a>
                             </li>
     
                             <li>
@@ -72,16 +72,19 @@ please forward it to our support desk and we will get back to you as soon as pos
                             
                     </div>
                     <div class="contact-form-card">
-                        <p>Name *</p>
-                        <input type="text" placeholder="">
-                        <p>Email Address *</p>
-                        <input type="email" name="mail" id="">
-                        <p>Message *</p>
-                        <textarea type="text"></textarea>
-                        <p>* is required </p>
-                        <div class="submit">
-                            <button type="submit">Submit</button>
-                        </div>
+                        <form name="Contact form" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                            <p>Name *</p>
+                            <input type="text" name="Name" required>
+                            <p>Email Address *</p>
+                            <input type="email" name="E-mail" required>
+                            <p>Message *</p>
+                            <textarea type="text" name="Message" required></textarea>
+                            <p>* is required </p>
+                            <div data-netlify-recaptcha="true" id="recaptcha"></div>
+                            <div class="submit">
+                                <button type="submit">Submit</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -143,14 +146,16 @@ please forward it to our support desk and we will get back to you as soon as pos
                         Subscribe to our newsletter
                     </h1>
 
-                    <input type="email" name="email" id="email">
-                    <button type="submitemail" name="submitemail" id="submitemail"> 
-                        OK
-                    </button>
+                    <form name="footer_email" method="POST" data-netlify="true">
+                        <input type="email" name="email"/>
+                        <button type="submit" name="email"> 
+                            OK
+                        </button>
+                      </form>
                 </div>
             </div>
         </div>
     </footer>
-    
+
 </body>
 </html>
