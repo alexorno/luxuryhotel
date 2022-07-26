@@ -1,8 +1,7 @@
 'use strict'
 
 document.addEventListener('DOMContentLoaded', function () {
-    import('./roomsapp.js')
-
+    
     const scrollDown = document.querySelector('.awelcomepage-scroll-inner');
     const firstSlideScroll = document.querySelector('.roomtypes-inner h1') || document.querySelector('.facilities h1') || document.querySelector('.rooms h1');
     
