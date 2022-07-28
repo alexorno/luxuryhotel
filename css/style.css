@@ -96,6 +96,10 @@ header::before {
   z-index: -1;
 }
 
+.inner-nav-burger{
+  display: none;
+}
+
 .inner-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -406,6 +410,7 @@ footer {
 .footer-inner-social-card img {
   width: 19px;
   height: 19px;
+
 }
 
 .footer-inner-social-card a {
@@ -824,14 +829,299 @@ header.contact::before {
   border-radius: 1px;
 }
 
+
 @media screen and (min-width: 1900px) {
   footer {
     height: 430px;
   }
 }
+@media screen and (max-width:1024px){
+  .wrapper{
+    max-width: 1000px;
+    width: 100%;
+    padding:0px 40px
+  }
+  header::before{
+    height: 800px;
+  }
+  .inner-nav-burger{
+    display: block;
+  }
+  .inner-nav-logo{
+    border-radius: 0px 0px 40px 40px;
+  }
+  .inner-nav-logo img{
+    width: 100px;
+    margin: 34px 30px;
+  }
+  .awelcomepage-inner {
+    height: 600px;
+  }
+  
+  .awelcomepage-title {
+    color: white;
+  }
+  
+  .awelcomepage-title h1 {
+    font-weight: 400;
+    font-size: 40px;
+  }
+  
+  .awelcomepage-title h2 {
+    font-size: 100px;
+    line-height: 100px;
+  }
+  
+  .awelcomepage-title h3 {
+    font-size: 40px;
+  }
+  
+  .awelcomepage-title p {
+    font-size: 21px;
+  }
+  .awelcomepage-book a{
+    font-size: 18px;
+    padding: 10px 45px;
+  }
+  .awelcomepage-book a::before{
+    transform: scale(0.8);
+    vertical-align: -webkit-baseline-middle;
+    zoom: 0.8;
+  }
+  .awelcomepage-scroll p{
+    font-size: 20px;
+  }
+  .awelcomepage-scroll img{
+    height: 50px;
+  }
 
-.webp header::before { background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 39, 74, 0.2)), to(rgba(20, 39, 74, 0.2))), url(../img/1st-bg.webp); }
+  .roomtypes-inner-card:first-child .roomtypes-inner-card-left::before{
+    height: 580px;
+  }
+  .roomtypes-inner-card:last-child .roomtypes-inner-card-left::before{
+    height: 530px;
+  }
+  .roomtypes-inner h1{
+    margin: 30px 0;
+    font-size: 28px;
+  }
+  .roomtypes-inner-card{
+    flex-direction: column;
+    width: 90%;
+    margin: 40px auto 0 auto;
+  }
+  .roomtypes-inner-card-left{
+    width: 100%;
+    text-align: center;
+  }
+  .roomtypes-inner-card-left h1{
+    text-align: center;
+    font-size: 36px;
+    margin: 0 0 20px 0;
+  }
+  .roomtypes-inner-card-left p{
+    font-size: 18px;
+    -webkit-text-stroke: 0px;
+  }
+  .roomtypes-inner-card-left button{
+    display: none;
+  }
+  .roomtypes-inner-card-right{
+    width: 90%;
+    margin: auto;
+  }
+  .swiper-button-prev img, .swiper-button-next img{
+    width: 70%;
+  }
 
-.webp header::before { background: -o-linear-gradient(rgba(20, 39, 74, 0.2), rgba(20, 39, 74, 0.2)), url(../img/1st-bg.webp); }
+  .testimonials-inner h1{
+    font-size: 36px;
+  }
+  .testimonials-inner p{
+    font-size: 18px;
+  }
+  .testimonials-inner p1{
+    font-size: 16px;
+  }
+  .review{
+  height: 125px;
+  }
+  .last-swiper-buttons.swiper-button-prev,.last-swiper-buttons.swiper-button-next {
+    display: none;
+  }
 
-.webp header::before { background: linear-gradient(rgba(20, 39, 74, 0.2), rgba(20, 39, 74, 0.2)), url(../img/1st-bg.webp); }
+
+  footer{
+    height: auto;
+  }
+
+  .footer-inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "a a"
+                         "b c"
+                         "d d";
+    height: auto;
+  }
+  .footer-inner-address{
+    margin: 40px auto;
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-inner-info{
+
+    grid-area: b;
+    display: flex;
+    text-align: center;
+    margin: 40px auto;
+  }
+  .footer-inner-info ul li{
+    font-size: 20px;
+  }
+
+  .footer-inner-social{
+    margin: 40px;
+    grid-area: c;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-inner-social-card{
+    font-size: 20px;
+    margin: 0 auto 20px auto;
+  }
+  .footer-inner-social-card img{
+    margin-top: 5px;
+  }
+  
+
+  .footer-inner-address img{
+    height:50px;
+  }
+  .footer-inner-address p{
+    font-size: 18px;
+    line-height: 34px;
+  }
+
+  .footer-inner-newsletter{
+        grid-area: d;
+        text-align: center;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+  .footer-inner-newsletter input{
+    height: 70px;
+  }
+  .footer-inner-newsletter button{
+    height: 70px;
+    padding: 0 35px;
+    font-size: 18px;
+  }
+
+
+  .inner-nav-navigation{
+    display: none;
+  }
+
+  
+  #menu_checkbox {
+    display: none;
+  }
+  
+  label {
+    z-index: 99;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    transform: scale(0.8);
+    margin: -30px auto 0 auto;
+    cursor: pointer;
+  }
+  label div {
+    position: relative;
+    top: 0;
+    height: 7px;
+    background-color: #fff;
+    margin-bottom: 12px;
+    transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width,
+      0.3s ease right;
+    border-radius: 2px;
+  }
+  
+  label div:first-child {
+    transform-origin: 0;
+  }
+  
+  label div:last-child {
+    margin-bottom: 0;
+    transform-origin: 60px;
+  }
+  
+  label div:nth-child(2) {
+    right: 0;
+    width: 60px;
+  }
+  
+  #menu_checkbox:checked + label:before {
+    background-color: #4caf50;
+  }
+  
+  #menu_checkbox:checked + label div:first-child {
+    top: -5px;
+    transform: rotateZ(45deg);
+  }
+  
+  #menu_checkbox:checked + label div:last-child {
+    top: 7px;
+    left:-10px;
+    transform: rotateZ(45deg);
+  }
+  
+  #menu_checkbox:checked + label div:nth-child(2) {
+    width: 70px;
+    top: 0;
+    right: 11px;
+    transform: rotateZ(-45deg);
+  }
+
+  
+  .burger-menu.active{
+    left: 0;
+  }
+
+  .burger-menu{
+    transition: all 500ms cubic-bezier(0.79, -0.26, 0.49, 1.63);
+    display: flex;
+    height: 100%;
+    width: 100%;
+    left: 100%;
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    background-color: var(--darkblue-color);
+    align-items: center;
+    z-index: 10;
+  }
+  .burger-menu ul{
+    margin: auto;
+    list-style: none;
+    text-align: center;
+
+  }
+  .burger-menu ul li{
+    margin-bottom:40px;
+  }
+  .burger-menu ul li a{
+    color: #E5E5E5;
+    text-decoration: none;
+    font-size: 42px;
+  }
+
+
+}

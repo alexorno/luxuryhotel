@@ -1,6 +1,21 @@
 'use strict'
 
 document.addEventListener('DOMContentLoaded', function () {
+  // burger
+  const burgerMenu = document.querySelector('.burger-menu')
+  const checkboxMenu = document.getElementById('menu_checkbox')
+  
+
+  checkboxMenu.addEventListener('click', () => {
+    burgerMenu.classList.toggle('active')
+  });
+  
+
+  
+
+
+
+
 
   const scrollDown = document.querySelector('.awelcomepage-scroll-inner');
   const firstSlideScroll = document.querySelector('.roomtypes-inner h1') || document.querySelector('.facilities h1') || document.querySelector('.rooms h1');
